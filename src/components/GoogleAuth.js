@@ -6,7 +6,7 @@ class GoogleAuth extends React.Component{
   componentDidMount(){
     window.gapi.load('client:auth2', () => {
       window.gapi.client.init({
-        clientId: '1032064687272-vfnn3uv02jf6bd28d3u5fa9ivdc9mp5r.apps.googleusercontent.com',
+        clientId: '',
         scope: 'email'
       })
       .then(() => {
@@ -29,7 +29,7 @@ class GoogleAuth extends React.Component{
     this.auth.signIn();
   };
 
-  onSIgnOutClick = () => {
+  onSignOutClick = () => {
     this.auth.signOut();
   };
 
